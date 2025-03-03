@@ -78,7 +78,7 @@ class BaseMessage:
 
 def choose_api():
     global chosen_api
-    prompt = "Use OpenAI API instead of Anthropic? [y/N]: "
+    prompt = "Use OpenAI API instead of Anthropic? [y/N]:y "
     choice = input(colored(prompt, "cyan")).strip().lower()
     
     if choice in ["y", "yes"]:
